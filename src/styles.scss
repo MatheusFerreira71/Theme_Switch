@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+:root {
+    --gray-0: #f8f8f8;
+    --gray-1: #dbe1e8;
+    --gray-2: #b2becd;
+    --gray-3: #6c7983;
+    --gray-4: #454e56;
+    --gray-5: #2a2e35;
+    --gray-6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+}
+
+.light {
+    --bg: var(--gray-0);
+    --bg-nav: linear-gradient(to right, var(--gray-1), var(--gray-3));
+    --bg-dropdown: var(--gray-0);
+    --text: var(--gray-6);
+    --border-color: var(--blue);
+    --bg-solar: var(--yellow);
+}
+
+.dark {
+    --bg: var(--gray-5);
+    --bg-nav: linear-gradient(to right, var(--gray-5), var(--gray-6));
+    --bg-dropdown: var(--gray-6);
+    --text: var(--gray-0);
+    --border-color: var(--purple);
+    --bg-solar: var(--blue);
+}
+
+.solar {
+    --gray-0: #fbffd4;
+    --gray-1: #f7f8d0;
+    --gray-2: #b6f880;
+    --gray-3: #5ec72d;
+    --gray-4: #3ea565;
+    --gray-5: #005368;
+    --gray-6: #003d4c;
+}
